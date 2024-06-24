@@ -1,0 +1,184 @@
+.catalog{
+  xxwidth:100%;
+  background-color: violet;
+  .total-block-padding();
+
+  .catalog-controls{
+    display:flex;
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+
+    .catalog-hotelsFound-label{
+      font-family: "PT Sans Bold";
+      font-size: 30px;
+    }
+
+    .catalog-sorting{
+      /* Reset. */
+      appearance: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      border: unset;
+
+      /* Style */
+      width: 287px;
+      margin-left: 20%;
+      padding: 0.75rem;
+      border: 2px solid #E6E6E6;
+
+      font-family: "PT Sans Normal";
+      font-size: 18px;
+      color: #333333;
+
+      /* Arrow */
+      background-image: url("/img/icons/dropdown_1.svg");
+      background-repeat: no-repeat;
+      background-position: right 0.7rem top 50%;
+      background-size: 0.65rem auto;
+      background-color: #FFFFFF;
+    }
+
+    .catalog-changeView-buttons{
+      display:flex;
+      justify-content: space-around;
+      align-items: center;
+      gap: 8px;
+
+      .grid-view-btn, .slideShow-view-btn, .list-view-btn{
+        width: 48px;
+        height:48px;
+        border: solid 2px #E5E5E5;
+        border-radius: 4px;
+        background-color: white;
+      }
+
+      .grid-view-btn{
+        background-image: url(/img/icons/grid-view.png);
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+
+      .slideShow-view-btn{
+        background-image: url(/img/icons/slideshow-view.png);
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+
+      .list-view-btn{
+        background-image: url(/img/icons/list-view.png);
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+
+      .active{
+        border: solid 2px #000000;
+      }
+    }
+  }
+
+  .hotel-card{
+    display: flex;
+    flex-direction: column;
+    width:340px;
+    background-color: white;
+    padding:20px;
+    row-gap: 16px;
+    .card-image{
+      width: 340px;
+      height: 206px;
+      background:grey;
+      align-self: center;
+    }
+
+    .hotel-card-caption{
+      font-family: "PT Sans Bold";
+      font-size: 24px;
+      color:#000000;
+    }
+
+    .hotel-type-price{
+      display:flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 20px;
+      font-family: "PT Sans Normal";
+      font-size: 18px;
+      height: 23px;
+
+      .hotel-type,  .hotel-price{
+        width:50%;
+      }
+
+    }
+
+    .card-buttons{
+      display:flex;
+      align-items: center;
+      justify-content:space-between;
+      column-gap: 20px;
+
+      .more-info-link, .add-toFavorites-btn{
+        display: flex;
+        width: 50%;
+        height: 37px;
+
+        border-radius: 4px;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        color: white;
+
+        font-family: "PT Sans Bold";
+        font-size: 18px;
+      }
+
+      .more-info-link{
+        background-color: #756257;
+      }
+
+      .add-toFavorites-btn{
+      background-color: #83B3D3;
+      border-style: none;
+      cursor: pointer;
+      }
+    }
+
+    .rating-container{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .rating-stars{
+        display: flex;
+        list-style: none;
+        padding:0;
+
+        li{
+          width:18px;
+          height:17px;
+          background-image: url("/img/icons/star.svg");
+        }
+
+      }
+
+      .rating-label{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width:50%;
+        height:37px;
+        background-color: #F2F2F2;
+        border-radius: 4px;
+        font-family: "PT Sans Normal";
+        font-size: 16px;
+      }
+    }
+
+  }
+
+
+}
+
+
