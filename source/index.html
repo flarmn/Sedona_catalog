@@ -31,26 +31,36 @@
     <section class="filters">
       <h1 class="filters-header">Гостиницы Седоны</h1>
       <ul class="filters-breadCrumbs">
-        <li><a href="/" class = "breadCrumbs-home"></a></li>
+        <li><a href="/" class="breadCrumbs-home"></a></li>
         <li><a href="#">Гостиницы</a></li>
       </ul>
-      <form class="filters-controls-list" action="" method="get">
+      <form class="filters-form" action="" method="get">
         <div class="filters-infrastructure-block">
           <div class="filter-infrastructure-heading">Инфраструктура:</div>
           <ul class="filters-infrastructure-checkList">
             <li>
-              <input type="checkbox" class="filters-pool-checkbox" name="pool" value="pool" id="pool" checked>
-              <label for="pool">Бассейн</label>
+              <label class="checkbox-container">
+                <input type="checkbox" class="filters-pool-checkbox" name="pool" value="pool" id="pool" checked>
+                <span class="checkmark"></span>
+                <label for="pool" class = "checkbox-caption">Бассейн</label>
+              </label>
             </li>
             <li>
-              <input type="checkbox" class="filters-parking-checkbox" name="parking" value="parking" id="parking"
-                checked>
-              <label for="pool">Парковка</label>
+              <label class="checkbox-container">
+                <input type="checkbox" class="filters-parking-checkbox" name="parking" value="parking" id="parking"
+                  checked>
+                <span class="checkmark"></span>
+                <label for="parking" class = "checkbox-caption">Парковка</label>
+              </label>
             </li>
             <li>
-              <input type="checkbox" class="filters-parking-checkbox" name=" wifi" value="wifi" id="wifi">
-              <label for="pool">Wi-Fi</label>
+              <label class="checkbox-container">
+                <input type="checkbox" class="filters-parking-checkbox" name=" wifi" value="wifi" id="wifi">
+                <span class="checkmark"></span>
+                <label for="wifi" class = "checkbox-caption">Wi-Fi</label>
+              </label>
             </li>
+
           </ul>
         </div>
 
@@ -58,16 +68,26 @@
           <div class="filter-housingType-heading">Тип жилья:</div>
           <ul class="filters-housingType-optionsList">
             <li>
-              <input type="radio" class="filters-hotel-radio" name="housingType" value="hotel" id="hotel" checked>
-              <label for="hotel">Гостиница</label>
+              <label class="radio-container">
+                <input type="radio" class="filters-hotel-radio" name="housingType" value="hotel" id="hotel" checked>
+                <span class="radio-checkmark"></span>
+                <label for="hotel" class = "radioBtn-caption">Гостиница</label>
+              </label>
             </li>
             <li>
-              <input type="radio" class="filters-motel-radio" name="housingType" value="motel" id="motel">
-              <label for="motel">Мотель</label>
+              <label class="radio-container">
+                <input type="radio" class="filters-motel-radio" name="housingType" value="motel" id="motel">
+                <span class="radio-checkmark"></span>
+                <label for="motel" class = "radioBtn-caption">Мотель</label>
+              </label>
             </li>
             <li>
-              <input type="radio" class="filters-apartments-radio" name="housingType" value="apartments" id="apartments">
-              <label for="apartments">Апартаменты</label>
+              <label class="radio-container">
+                <input type="radio" class="filters-apartments-radio" name="housingType" value="apartments"
+                  id="apartments">
+                <span class="radio-checkmark"></span>
+                <label for="apartments" class = "radioBtn-caption">Апартаменты</label>
+              </label>
             </li>
           </ul>
         </div>
@@ -80,7 +100,7 @@
           <button class="filters-apply-btn">Применить</button>
           <button class="filters-reset-btn">Сбросить</button>
         </div>
-      </div>
+        </div>
     </section>
 
   </main>
