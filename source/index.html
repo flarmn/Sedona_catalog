@@ -94,6 +94,24 @@
 
         <div class="filters-prices-block">
           <div class="filter-prices-heading">Стоимость, ₽:</div>
+          <div class = "filter-double-range">
+            <div class="wrapper">
+              <div class="values">
+                <span id="range1">
+                  0
+                </span>
+                <span> &dash; </span>
+                <span id="range2">
+                  100
+                </span>
+              </div>
+              <div class="container">
+                <div class="slider-track"></div>
+                <input type="range" min="0" max="100" value="30" id="slider-1" oninput="slideOne()">
+                <input type="range" min="0" max="100" value="70" id="slider-2" oninput="slideTwo()">
+              </div>
+            </div>
+          </div>
         </div>
 
         <div class="filters-buttons-block">
@@ -107,6 +125,7 @@
   <footer>
     Footer
   </footer>
+  <script src = "/js/script.min.js"></script>
 </body>
 
 </html>
