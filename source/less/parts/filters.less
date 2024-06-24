@@ -83,20 +83,17 @@
 
     .filters-prices-block{
       width:287px;
-
+      height:164px;
         /* DOUBLE RANGES CONTROL */
       .wrapper {
         position: relative;
-        width: 80%;
-        background-color: #ffffff;
-        padding: 50px 40px 20px 40px;
-        border-radius: 10px;
+        width:100%;
       }
       .container {
         position: relative;
         width: 100%;
-        height: 100px;
-        margin-top: 30px;
+        xxheight: 100px;
+        margin-top: 32px;
       }
       input[type="range"] {
         -webkit-appearance: none;
@@ -119,11 +116,13 @@
         top: 0;
         bottom: 0;
         border-radius: 5px;
+        background-color: rgba(255,255,255,0.3);
       }
       input[type="range"]::-webkit-slider-runnable-track {
         -webkit-appearance: none;
         height: 5px;
       }
+      /*
       input[type="range"]::-moz-range-track {
         -moz-appearance: none;
         height: 5px;
@@ -132,16 +131,19 @@
         appearance: none;
         height: 5px;
       }
+        */
       input[type="range"]::-webkit-slider-thumb {
         -webkit-appearance: none;
-        height: 1.7em;
-        width: 1.7em;
-        background-color: #3264fe;
+        height: 20px;
+        width: 20px;
+        background-color: white;
         cursor: pointer;
         margin-top: -9px;
         pointer-events: auto;
-        border-radius: 50%;
+        border-radius: 5px;
       }
+
+      /*
       input[type="range"]::-moz-range-thumb {
         -webkit-appearance: none;
         height: 1.7em;
@@ -161,62 +163,73 @@
         background-color: #3264fe;
         pointer-events: auto;
       }
+        */
       input[type="range"]:active::-webkit-slider-thumb {
-        background-color: #ffffff;
-        border: 1px solid #3264fe;
+        background-color: silver;
+        border: 1px solid grey;
       }
       .values {
-        background-color: #3264fe;
-        width: 32%;
-        position: relative;
-        margin: auto;
-        padding: 10px 0;
-        border-radius: 5px;
-        text-align: center;
-        font-weight: 500;
-        font-size: 25px;
-        color: #ffffff;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+
+        font-family: "PT Sans Normal";
+        font-size: 18px;
+        color:white;
+
+        .range1, .range2{
+          width:50%;
+          height:48px;
+          border: solid 2px white;
+          border-radius: 4px 0px 0px 4px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding-left: 20px;
+          padding-right: 20px;
+        }
+
+        .range2{
+          border-radius: 0px 4px 4px 0px;
+        }
+
+        .upto-label, .from-label{
+          color: rgba(255,255,255, 0.3);
+        }
       }
-      .values:before {
-        content: "";
-        position: absolute;
-        height: 0;
-        width: 0;
-        border-top: 15px solid #3264fe;
-        border-left: 15px solid transparent;
-        border-right: 15px solid transparent;
-        margin: auto;
-        bottom: -14px;
-        left: 0;
-        right: 0;
-      }
-    } 
+
+    }
 
 
 
 
     /* BUTTONS SECTION */
-    .filters-apply-btn, .filters-reset-btn{
-      display: flex;
-      width:160px;
-      height:48px;
-      background-color: #83B3D3;
-      color:white;
-      border-style: none;
-      justify-content: center;
-      align-items: center;
-      font-family: "PT Sans Bold";
-      font-size: 16px;
-      text-transform: uppercase;
-      border-radius: 3px;
-      cursor:pointer;
+    .filters-buttons-block{
+      padding-top:48px;
+
+      .filters-apply-btn, .filters-reset-btn{
+        display: flex;
+        width:160px;
+        height:48px;
+        background-color: #83B3D3;
+        color:white;
+        border-style: none;
+        justify-content: center;
+        align-items: center;
+        font-family: "PT Sans Bold";
+        font-size: 16px;
+        text-transform: uppercase;
+        border-radius: 3px;
+        cursor:pointer;
+      }
+
+      .filters-reset-btn{
+        font-family: "PT Sans Normal";
+        font-size: 18px;
+        background-color: transparent;
+      }
     }
 
-    .filters-reset-btn{
-      font-family: "PT Sans Normal";
-      font-size: 18px;
-      background-color: transparent;
-    }
 
 
 

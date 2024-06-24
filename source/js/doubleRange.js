@@ -1,4 +1,4 @@
-alert("TET");
+//alert("TET");
 window.onload = function () {
   slideOne();
   slideTwo();
@@ -29,5 +29,5 @@ function slideTwo() {
 function fillColor() {
   percent1 = (sliderOne.value / sliderMaxValue) * 100;
   percent2 = (sliderTwo.value / sliderMaxValue) * 100;
-  sliderTrack.style.background = `linear-gradient(to right, #dadae5 ${percent1}% , #3264fe ${percent1}% , #3264fe ${percent2}%, #dadae5 ${percent2}%)`;
+  sliderTrack.style.background = `linear-gradient(to right, rgba(255,255,255,0.3) ${percent1}% , #FFFFFF ${percent1}% , #FFFFFF ${percent2}%, rgba(255,255,255,0.3) ${percent2}%)`;
 }
