@@ -42,7 +42,7 @@
               <label class="checkbox-container">
                 <input type="checkbox" class="filters-pool-checkbox" name="pool" value="pool" id="pool" checked>
                 <span class="checkmark"></span>
-                <label for="pool" class = "checkbox-caption">Бассейн</label>
+                <label for="pool" class="checkbox-caption">Бассейн</label>
               </label>
             </li>
             <li>
@@ -50,14 +50,14 @@
                 <input type="checkbox" class="filters-parking-checkbox" name="parking" value="parking" id="parking"
                   checked>
                 <span class="checkmark"></span>
-                <label for="parking" class = "checkbox-caption">Парковка</label>
+                <label for="parking" class="checkbox-caption">Парковка</label>
               </label>
             </li>
             <li>
               <label class="checkbox-container">
                 <input type="checkbox" class="filters-parking-checkbox" name=" wifi" value="wifi" id="wifi">
                 <span class="checkmark"></span>
-                <label for="wifi" class = "checkbox-caption">Wi-Fi</label>
+                <label for="wifi" class="checkbox-caption">Wi-Fi</label>
               </label>
             </li>
 
@@ -71,14 +71,14 @@
               <label class="radio-container">
                 <input type="radio" class="filters-hotel-radio" name="housingType" value="hotel" id="hotel" checked>
                 <span class="radio-checkmark"></span>
-                <label for="hotel" class = "radioBtn-caption">Гостиница</label>
+                <label for="hotel" class="radioBtn-caption">Гостиница</label>
               </label>
             </li>
             <li>
               <label class="radio-container">
                 <input type="radio" class="filters-motel-radio" name="housingType" value="motel" id="motel">
                 <span class="radio-checkmark"></span>
-                <label for="motel" class = "radioBtn-caption">Мотель</label>
+                <label for="motel" class="radioBtn-caption">Мотель</label>
               </label>
             </li>
             <li>
@@ -86,7 +86,7 @@
                 <input type="radio" class="filters-apartments-radio" name="housingType" value="apartments"
                   id="apartments">
                 <span class="radio-checkmark"></span>
-                <label for="apartments" class = "radioBtn-caption">Апартаменты</label>
+                <label for="apartments" class="radioBtn-caption">Апартаменты</label>
               </label>
             </li>
           </ul>
@@ -94,23 +94,23 @@
 
         <div class="filters-prices-block">
           <div class="filter-prices-heading">Стоимость, ₽:</div>
-          <div class = "filter-double-range">
+          <div class="filter-double-range">
             <div class="wrapper">
               <div class="values">
-                <div class = "range1">
+                <div class="range1">
                   <span id="range1">0</span>
-                  <span class = "from-label">от</span>
+                  <span class="from-label">от</span>
                 </div>
 
-                <div class = "range2">
+                <div class="range2">
                   <span id="range2">100</span>
-                  <span class = "upto-label">до</span>
-              </div>
+                  <span class="upto-label">до</span>
+                </div>
               </div>
               <div class="container">
                 <div class="slider-track"></div>
-                <input type="range" min="0" max="10000" value="0" id="slider-1" name = "priceMin" oninput="slideOne()">
-                <input type="range" min="0" max="10000" value="9000" id="slider-2" name = "priceMax" oninput="slideTwo()">
+                <input type="range" min="0" max="10000" value="0" id="slider-1" name="priceMin" oninput="slideOne()">
+                <input type="range" min="0" max="10000" value="9000" id="slider-2" name="priceMax" oninput="slideTwo()">
               </div>
             </div>
           </div>
@@ -123,52 +123,219 @@
         </div>
     </section>
 
-    <section class = "catalog">
-      <div class = "catalog-controls">
+    <section class="catalog">
+      <div class="catalog-controls">
 
-        <label class = "catalog-hotelsFound-label">Найдено гостиниц: 38</label>
+        <label class="catalog-hotelsFound-label">Найдено гостиниц: 38</label>
 
-        <select name="catalog-sorting-order" id="catalog-sorting" class = "catalog-sorting">
+        <select name="catalog-sorting-order" id="catalog-sorting" class="catalog-sorting">
           <option value="chipest">Сначала дешевые</option>
           <option value="expensive">Сначала дорогие</option>
           <option value="popular">Популярные</option>
         </select>
 
-        <div class = "catalog-changeView-buttons">
-          <button class = "grid-view-btn active"></button>
-          <button class = "slideShow-view-btn"></button>
-          <button class = "list-view-btn"></button>
+        <div class="catalog-changeView-buttons">
+          <button class="grid-view-btn active"></button>
+          <button class="slideShow-view-btn"></button>
+          <button class="list-view-btn"></button>
         </div>
       </div>
 
-       <div class = 'hotel-card'>
-        <img src = "#" alt = "some img" class = "card-image">
-        <label class = "hotel-card-caption">
-          Amara Resort & Spa
-        </label>
-        <div class = "hotel-type-price">
-          <p class = "hotel-type">
-            Гостиница
-          </p>
-          <span class = "hotel-price">От 4000 ₽</span>
+      <div class="cards-grid">
+
+
+        <div class='hotel-card'>
+          <img src="/img/content/hotel-amara-resort.jpg" alt="some img" class="card-image">
+          <label class="hotel-card-caption">
+            Amara Resort & Spa
+          </label>
+          <div class="hotel-type-price">
+            <p class="hotel-type">
+              Гостиница
+            </p>
+            <span class="hotel-price">От 4000 ₽</span>
+          </div>
+
+          <div class="card-buttons">
+            <a href="#" class="more-info-link">Подробнее</a>
+            <button class="add-toFavorites-btn">В избранное</button>
+          </div>
+
+          <div class="rating-container">
+            <ul class="rating-stars">
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+            <label class="rating-label">Рейтинг: 8,5</label>
+          </div>
         </div>
 
-        <div class = "card-buttons">
-          <a href = "#" class = "more-info-link">Подробнее</a>
-          <button class = "add-toFavorites-btn">В избранное</button>
+
+        <div class='hotel-card'>
+          <img src="/img/content/hotel-desert-quail.jpg" alt="some img" class="card-image">
+          <label class="hotel-card-caption">
+            Desert Quail Inn
+          </label>
+          <div class="hotel-type-price">
+            <p class="hotel-type">
+              Гостиница
+            </p>
+            <span class="hotel-price">От 3000 ₽</span>
+          </div>
+
+          <div class="card-buttons">
+            <a href="#" class="more-info-link">Подробнее</a>
+            <button class="add-toFavorites-btn">В избранное</button>
+          </div>
+
+          <div class="rating-container">
+            <ul class="rating-stars">
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+            <label class="rating-label">Рейтинг: 8,9</label>
+          </div>
         </div>
 
-        <div class = "rating-container">
-          <ul class = "rating-stars">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
-          <label class = "rating-label">Рейтинг: 8,5</label>
+        <div class='hotel-card'>
+          <img src="/img/content/hotel-villas-at-poco.jpg" alt="some img" class="card-image">
+          <label class="hotel-card-caption">
+            Villas at Poco Diablo
+          </label>
+          <div class="hotel-type-price">
+            <p class="hotel-type">
+              Гостиница
+            </p>
+            <span class="hotel-price">От 2000 ₽</span>
+          </div>
+
+          <div class="card-buttons">
+            <a href="#" class="more-info-link">Подробнее</a>
+            <button class="add-toFavorites-btn fav-added">В избранном</button>
+          </div>
+
+          <div class="rating-container">
+            <ul class="rating-stars">
+              <li></li>
+              <li></li>
+            </ul>
+            <label class="rating-label">Рейтинг: 9,2</label>
+          </div>
         </div>
-       </div>
+
+        <div class='hotel-card'>
+          <img src="/img/content/hotel-green-tree.jpg" alt="some img" class="card-image">
+          <label class="hotel-card-caption">
+            Amara Resort & Spa
+          </label>
+          <div class="hotel-type-price">
+            <p class="hotel-type">
+              Гостиница
+            </p>
+            <span class="hotel-price">От 3000 ₽</span>
+          </div>
+
+          <div class="card-buttons">
+            <a href="#" class="more-info-link">Подробнее</a>
+            <button class="add-toFavorites-btn">В избранное</button>
+          </div>
+
+          <div class="rating-container">
+            <ul class="rating-stars">
+              <li></li>
+              <li></li>
+            </ul>
+            <label class="rating-label">Рейтинг: 9,2</label>
+          </div>
+        </div>
+
+        <div class='hotel-card'>
+          <img src="/img/content/hotel-amara-resort.jpg" alt="some img" class="card-image">
+          <label class="hotel-card-caption">
+            Amara Resort & Spa
+          </label>
+          <div class="hotel-type-price">
+            <p class="hotel-type">
+              Гостиница
+            </p>
+            <span class="hotel-price">От 4000 ₽</span>
+          </div>
+
+          <div class="card-buttons">
+            <a href="#" class="more-info-link">Подробнее</a>
+            <button class="add-toFavorites-btn">В избранное</button>
+          </div>
+
+          <div class="rating-container">
+            <ul class="rating-stars">
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+            <label class="rating-label">Рейтинг: 8,5</label>
+          </div>
+        </div>
+
+        <div class='hotel-card'>
+          <img src="/img/content/hotel-amara-resort.jpg" alt="some img" class="card-image">
+          <label class="hotel-card-caption">
+            Amara Resort & Spa
+          </label>
+          <div class="hotel-type-price">
+            <p class="hotel-type">
+              Гостиница
+            </p>
+            <span class="hotel-price">От 4000 ₽</span>
+          </div>
+
+          <div class="card-buttons">
+            <a href="#" class="more-info-link">Подробнее</a>
+            <button class="add-toFavorites-btn">В избранное</button>
+          </div>
+
+          <div class="rating-container">
+            <ul class="rating-stars">
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+            <label class="rating-label">Рейтинг: 8,5</label>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div class = "load-more-container">
+        <button class="load-more-button">Загрузить еще</button>
+      </div>
+
+      <div class = "catalog-pagination">
+        <ul class = "pagination-pages">
+          <li><button class = "pagination-button selected">1</button></li>
+          <li><button class = "pagination-button">2</button></li>
+          <li><button class = "pagination-button">3</button></li>
+          <li><button class = "pagination-button">4</button></li>
+          <li><button class = "pagination-button">...</button></li>
+          <li><button class = "pagination-button">10</button></li>
+        </ul>
+
+        <div class = "pages-to-show">
+          <label for = "pagesCountSelect">Гостиниц на странице:</label>
+          <select class = "pages-count-select" id="pagesCountSelect" name = "showPages">
+            <option value = "1">1</option>
+          </select>
+        </div>
+
+      </div>
 
     </section>
 
@@ -176,7 +343,7 @@
   <footer>
     Footer
   </footer>
-  <script src = "/js/script.min.js"></script>
+  <script src="/js/script.min.js"></script>
 </body>
 
 </html>
