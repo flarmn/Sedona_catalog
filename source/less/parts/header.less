@@ -1,88 +1,95 @@
-header{
-  display:flex;
+header {
+  display: flex;
   justify-content: space-between;
   align-items: center;
-  height:70px;
+  height: 70px;
   background-color: white;
 }
 
-.header-left-block{
-  display:flex;
+.header-left-block {
+  display: flex;
   width: 80%;
   align-items: center;
 
-  .header-logo-link{
-    height:70px;
-    width:139px;
+  .header-logo-link {
+    height: 70px;
+    width: 139px;
     background: url("/img/logo/logo.png") no-repeat;
     text-decoration: none;
   }
 
-  .main-menu{
-    display:flex;
+  .main-menu {
+    display: flex;
     margin-left: 30px;
     height: 70px;
-    a{
+
+    a {
       display: flex;
       margin-right: 17px;
       text-decoration: none;
       font-family: "PT Sans Bold", "Arial";
-      color:#000000;
-      font-size:20px;
+      color: #000000;
+      font-size: 20px;
       line-height: 26px;
       align-items: center;
       border-bottom: solid 2px transparent;
     }
-    a:visited, .visited, a:hover{
+
+    a:visited,
+    .visited,
+    a:hover {
       border-bottom: solid 2px #756257;
     }
 
   }
 }
 
-.header-right-block{
-  display:flex;
+.header-right-block {
+  display: flex;
   width: 20%;
   justify-content: flex-end;
   align-items: center;
-  .header-search-button, .header-likes-counter{
-    width:42px;
-    height:70px;
+
+  .header-search-button,
+  .header-likes-counter {
+    width: 42px;
+    height: 70px;
     background-repeat: no-repeat;
     background-position: center;
   }
 
-  .header-search-button{
+  .header-search-button {
     background-image: url('/img/background/search.png');
-    border-style:none;
+    border-style: none;
     background-color: transparent;
   }
 
-  .header-likes-counter{
+  .header-likes-counter {
     background-image: url('/img/background/favorite.png');
-    .header-likes-display{
+
+    .header-likes-display {
       display: flex;
-      position:absolute;
+      position: absolute;
       background-color: #7DB54F;
-      width:18px;
-      height:18px;
+      width: 18px;
+      height: 18px;
       color: #ffff;
       border-radius: 10px;
       transform: translateX(135%) translateY(95%);
       font-family: "PT Sans Normal", "Arial";
-      font-size:10px;
+      font-size: 10px;
       justify-content: center;
       align-items: center;
     }
   }
 
-  .header-openCatalog-link{
+  .header-openCatalog-link {
     display: flex;
-    width:160px;
-    height:37px;
+    width: 160px;
+    height: 37px;
     background-color: #756257;
     text-decoration: none;
-    color:white;
+    color: white;
     align-items: center;
     justify-content: center;
     margin-left: 20px;
@@ -92,10 +99,3 @@ header{
     flex-shrink: 0;
   }
 }
-
-
-
-
-
-
-
