@@ -17,7 +17,6 @@
     user-select: none;
   }
 
-  /* Hide the browser's default checkbox */
   .checkbox-container input {
     position: absolute;
     opacity: 0;
@@ -26,7 +25,6 @@
     width: 0;
   }
 
-  /* Create a custom checkbox */
   .checkmark {
     position: absolute;
     top: 0;
@@ -38,19 +36,16 @@
     border-radius: 6px;
   }
 
-  /* Create the checkmark/indicator (hidden when not checked) */
   .checkmark:after {
     content: "";
     position: absolute;
     display: none;
   }
 
-  /* Show the checkmark when checked */
   .checkbox-container input:checked ~ .checkmark:after {
     display: block;
   }
 
-  /* Style the checkmark/indicator */
   .checkbox-container .checkmark:after {
     left: 7px;
     top: 1px;
@@ -80,7 +75,6 @@
     user-select: none;
   }
 
-  /* Hide the browser's default checkbox */
   .radio-container input {
     position: absolute;
     opacity: 0;
@@ -89,7 +83,6 @@
     width: 0;
   }
 
-  /* Create a custom checkbox */
   .radio-checkmark {
     position: absolute;
     top: 0;
@@ -101,19 +94,16 @@
     border-radius: 50%;
   }
 
-  /* Create the checkmark/indicator (hidden when not checked) */
   .radio-checkmark:after {
     content: "";
     position: absolute;
     display: none;
   }
 
-  /* Show the checkmark when checked */
   .radio-container input:checked ~ .radio-checkmark:after {
     display: block;
   }
 
-  /* Style the checkmark/indicator */
   .radio-container .radio-checkmark:after {
     left: 25%;
     top: 25%;
