@@ -1,5 +1,4 @@
 .catalog {
-  xxbackground-color: violet;
   .total-block-padding();
 
   .catalog-controls {
@@ -81,27 +80,11 @@
   }
 
   .cards-grid {
-    /*
-    display:flex;
-    justify-content:flex-start;
-    xxcolumn-gap: 4.5%;
-    flex-wrap: wrap;
-    */
-
-
-
     display: grid;
     padding: 0;
-    xxwidth: 105%;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     row-gap: 30px;
-
-    xxbackground-color: red;
-
     margin-top: 56px;
-    xxmargin-left: -2.5%;
-
-
 
     .hotel-card {
       display: flex;
@@ -110,7 +93,6 @@
       background-color: white;
       padding: 20px;
       row-gap: 16px;
-
       margin: auto;
 
       .card-image {
@@ -209,39 +191,10 @@
           font-size: 16px;
         }
       }
-
-    }
-
-    /*
-    .hotel-card:last-child{
-      margin-right:52.3%;
-      xxjustify-self:flex-start;
-    }
-    */
-
-  }
-
-  .load-more-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height:120px;
-    border-top: solid 1px #E6E6E6;
-    border-bottom: solid 1px #E6E6E6;
-    .total-block-padding();
-
-    .load-more-button{
-      width:620px;
-      height:60px;
-      background-color: #83B3D3;
-      border-style: none;
-      border-radius:4px;
-      color:white;
-      font-family: "PT Sans Bold";
-      font-size:20px;
-      text-transform: uppercase;
     }
   }
+
+  
 
 
 }
