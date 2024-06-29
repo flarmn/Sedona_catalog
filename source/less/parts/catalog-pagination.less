@@ -1,3 +1,4 @@
+/* CATALOG PAGINATION */
 .catalog-pagination {
   display: flex;
   justify-content: space-between;
@@ -7,45 +8,54 @@
   margin-top: 33px;
 
 
-  .pagination-pages {
+  .pagination-panel {
     display: flex;
     justify-content: center;
     align-items: center;
     column-gap: 8px;
     padding: 0;
 
-    li {
-      list-style: none;
-    }
+
+  }
+}
+
+
+.pagination-panel {
+
+  li {
+    list-style: none;
   }
 
-  .pagination-button {
+  .pagination-panel__button,  .pagination-panel__button--selected {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #83B3D3;
     color: white;
-    font-family: "PT Sans Bold";
+    font-family: "PT Sans Bold", "Helvetica";
     font-size: 20px;
+    line-height: 21px;
     border-style: none;
     width: 55px;
     height: 55px;
     cursor: pointer;
   }
 
-  .selected {
+  .pagination-panel__button--selected {
     background-color: #F2F2F2;
     color: #000000;
   }
+}
 
+.pages-number-toShow {
   label {
-    font-family: "PT Sans Normal";
+    font-family: "PT Sans Normal", "Helvetica";
     font-size: 18px;
+    line-height: 23px;
     color: #333333;
-
   }
 
-  .pages-count-select {
+  .count-select {
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -56,11 +66,13 @@
     padding: 0.75rem;
     border: 2px solid #E6E6E6;
 
-    font-family: "PT Sans Normal";
+    font-family: "PT Sans Normal", "Helvetica";
     font-size: 18px;
+    line-height: 23px;
     color: #333333;
 
-    background-image: url("/img/icons/dropdown_1.svg");
+    background-image: linear-gradient(90deg, lightgrey, white);
+    xxbackground-image: url("/img/icons/dropdown_1.svg");
     background-repeat: no-repeat;
     background-position: right 0.7rem top 50%;
     background-size: 0.65rem auto;

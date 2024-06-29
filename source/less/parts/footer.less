@@ -1,3 +1,4 @@
+/* FOOTER styles */
 footer{
   margin-top:140px;
   display: flex;
@@ -6,50 +7,53 @@ footer{
   flex-shrink: 0;
   height:120px;
 
-  .social-icons-container{
+  .footer__social-icons{
     display: flex;
     align-items: center;
     column-gap: 30px;
-
-    a{
-      text-decoration: none;
-      cursor: pointer;
-    }
-
-    .twitter-icon{
-      width:18px;
-      height:15px;
-      background-image: url(/img/icons/twitter-icon.svg);
-      background-repeat: repeat;
-    }
-
-    .facebook-icon{
-      width:10px;
-      height:18px;
-      background-image: url(/img/icons/facebook-icon.svg);
-      background-repeat: repeat;
-    }
-
-    .youtube-icon{
-      width:20px;
-      height:16px;
-      background-image: url(/img/icons/youtube-icon.svg);
-      background-repeat: repeat;
-    }
   }
 
-
-  .footer-telephone{
-    font-family: "PT Sans Normal";
+  .footer__telephone{
+    font-family: "PT Sans Normal", "Helvetica";
     font-size: 40px;
     padding:0;
+    text-decoration: none;
+    color: #000000;
   }
 
-  .html-academy-logo{
+  .footer__logo{
     width:115px;
     height:34px;
     background-image: url(/img/logo/htmlAcademy_text_logo.svg);
     background-repeat: repeat;
   }
-
 }
+
+.footer__social-icons{
+  a{
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .twitter-icon{
+    width:18px;
+    height:15px;
+    background-image: url(/img/icons/twitter-icon.svg);
+    background-repeat: repeat;
+  }
+
+  .facebook-icon{
+    width:10px;
+    height:18px;
+    background-image: url(/img/icons/facebook-icon.svg);
+    background-repeat: repeat;
+  }
+
+  .youtube-icon{
+    width:20px;
+    height:16px;
+    background-image: url(/img/icons/youtube-icon.svg);
+    background-repeat: repeat;
+  }
+}
+
